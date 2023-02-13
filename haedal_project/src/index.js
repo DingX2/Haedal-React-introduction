@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CardNews from "./CardNews";
-import Ex from "./ex";
+import MyComponent from "./YourItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,10 +15,10 @@ root.render(
     {/* 캘린더*/}
     {/* 공지*/}
     {/* 카드뉴스*/}
-    카드뉴스
-    <Ex />
+    <div>카드뉴스</div>
     <CardNews />
-    {/* 버튼*/}
+
+    {/* <CardNews /> 버튼    */}
     {/* 지원하기*/}
     {/* 하단 상세페이지*/}
   </React.StrictMode>

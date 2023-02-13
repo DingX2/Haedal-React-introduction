@@ -1,3 +1,10 @@
+.image-wrap{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 16px; 
+    padding: 46px 31px; 
+}
 .wrap { 
     display: flex; 
     overflow: hidden;
