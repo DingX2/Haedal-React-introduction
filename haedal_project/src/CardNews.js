@@ -1,15 +1,13 @@
 import "./CardNews.css";
+import "./embla.css";
 import React from "react";
 
 //npm i react react-dom @trendyol-js/react-carousel --save
 import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import EmblaCarousel from "./EmblaCarousel";
-import Autoplay from "embla-carousel-autoplay";
 
 export default function CardNews() {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
   const autoplayOptions = {
     delay: 1000,
     rootNode: (emblaRoot) => emblaRoot.parentElement,
@@ -27,11 +25,15 @@ export default function CardNews() {
     <main className="sandbox">
       <section className="sandbox__carousel">
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+        {/*슬라이드 모션 추가*/}
+        {/*<div className="embla" ref={emblaRef} />*/}
       </section>
     </main>
   );
 
-  return (
+  return <App />;
+}
+/*
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <img src={"/img/card1.png"} className="embla__slide" alt="" />
@@ -43,8 +45,7 @@ export default function CardNews() {
         <img src={"/img/card2.png"} className="embla__slide_clone" alt="" />
       </div>
     </div>
-  );
-}
+  );*/
 
 /*
         <img src={"/img/카드들.png"} className="embla__slide" alt="" />

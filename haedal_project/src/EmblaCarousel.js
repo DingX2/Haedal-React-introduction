@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import imageByIndex from "./imageByIndex";
+import Autoplay from "embla-carousel-autoplay";
 
 const mockApiCall = (minWait, maxWait, callback) => {
   const min = Math.ceil(minWait);
@@ -9,11 +10,16 @@ const mockApiCall = (minWait, maxWait, callback) => {
   setTimeout(callback, wait);
 };
 
+const autoplayOptions = {
+  delay: 1000,
+  rootNode: (emblaRoot) => emblaRoot.parentElement,
+};
+
 const EmblaCarousel = (props) => {
   const { options, slides: propSlides } = props;
   const scrollListener = useRef(() => undefined);
   const [slides, setSlides] = useState(propSlides);
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
   const [hasMoreToLoad, setHasMoreToLoad] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const [pointerIsDown, setPointerIsDown] = useState(false);

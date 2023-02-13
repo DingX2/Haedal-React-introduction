@@ -2,10 +2,9 @@
 
 .embla {
     padding-top: 30px;
-    position: relative;
     overflow: hidden;
     width: max-content;
-    height: fit-content;
+    height: 500px;
     margin-left: -100px;
   }
   .embla__container {
