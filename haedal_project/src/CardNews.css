@@ -1,60 +1,23 @@
-.image-wrap{
+
+
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+  .image-wrap{
     max-width: 100%;
     height: auto;
     overflow: hidden;
     margin: 0 16px; 
+    margin-left: -50px; 
     padding: 46px 31px; 
+    flex: none;
 }
-.wrap { 
-    display: flex; 
-    overflow: hidden;
-  }
-  .wrap .rolling-list ul { 
-      display: flex;
-  }
-  .wrap .rolling-list ul li { 
-      width: 589px; 
-      height: 276px; 
-      box-sizing: border-box; 
-      border-radius: 20px; 
-      margin: 0 16px; 
-      padding: 46px 31px; 
-      display: flex; 
-      align-items: center; 
-      flex-shrink: 0; 
-  }
-  .wrap .rolling-list ul li:nth-child(1) { 
-      background-color: #F8E1E3;
-  }
-  .wrap .rolling-list ul li:nth-child(2) { 
-      background-color: #FFEAB5; 
-  }
-  .wrap .rolling-list ul li:nth-child(3) { 
-      background-color: #D3E7DC;
-  }
-  .wrap .rolling-list ul li:nth-child(4) { 
-      background-color: #A6C1E8;
-  }
-  .wrap .rolling-list ul li:nth-child(even) {
-      margin-top: 80px;
-  }
-  .wrap .rolling-list ul li .image-wrap { 
-      padding-right: 32px; 
-      width: 156px; 
-      flex-shrink: 0; 
-  }
-  .wrap .rolling-list ul li .image-wrap > img { 
-      width: 100%;
-  }
-  .wrap .rolling-list ul li .desc { 
-      font-family: 'BMJUA';
-  }
-  .wrap .rolling-list ul li .desc strong { 
-      display: block; 
-      font-size: 24px; 
-      margin-bottom: 24px;
-  }
-  .wrap .rolling-list ul li .desc span { 
-      font-size: 18px;
-      line-height: 1.2;
-  }
