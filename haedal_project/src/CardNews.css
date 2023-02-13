@@ -2,19 +2,22 @@
 
 .embla {
     padding-top: 30px;
-    overflow: hidden;
-  }
-  .embla__container {
     position: relative;
+    overflow: hidden;
+    width: max-content;
+    height: fit-content;
     margin-left: -100px;
   }
-  .embla__container_clone {
-    position: absolute ;
+  .embla__container {
+  }
+  .embla__slide_clone {
   }
 
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .image-wrap{
