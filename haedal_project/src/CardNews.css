@@ -1,12 +1,17 @@
 
 
 .embla {
+    padding-top: 30px;
     overflow: hidden;
   }
   .embla__container {
-    display: flex;
-
+    position: relative;
+    margin-left: -100px;
   }
+  .embla__container_clone {
+    position: absolute ;
+  }
+
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;

@@ -7,10 +7,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 export default function CardNews() {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const autoplayOptions = {
-    delay: 10,
+    delay: 1000,
     rootNode: (emblaRoot) => emblaRoot.parentElement,
   };
 
@@ -18,7 +18,11 @@ export default function CardNews() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <img src={"/img/카드들.png"} className="embla__slide" alt="" />
-        <img src={"/img/카드들2.png"} className="embla__slide" alt="" />
+        <img
+          src={"/img/카드들2.png"}
+          className="embla__container_clone"
+          alt=""
+        />
       </div>
     </div>
   );
@@ -27,7 +31,6 @@ export default function CardNews() {
 /*
         <img src={"/img/카드들.png"} className="embla__slide" />
         <img src={"/img/카드들2.png"} className="embla__slide" />
-
 export default function CardNews() {
   return ReactDOM.render(
     <Carousel>

@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CardNews from "./CardNews";
-import MyComponent from "./YourItem";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +16,7 @@ root.render(
     <div>카드뉴스</div>
     <CardNews />
 
-    {/* <CardNews /> 버튼    */}
+    {/*  버튼    */}
     {/* 지원하기*/}
     {/* 하단 상세페이지*/}
   </React.StrictMode>
