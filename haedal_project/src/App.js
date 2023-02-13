@@ -1,15 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+import Ex from "./ex";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">이수현 수정중... </header>
-      <header className="App-header">남동우 수정중... </header>
-      <header className="App-header">김현주 수정중... </header>
-      <header className="App-header">조현호 수정중... </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        여기서 수정해서 새로고침이 아니라 자동 저장을
+        <Ex />
+      </div>
+    );
+  }
 }
 
 export default App;
