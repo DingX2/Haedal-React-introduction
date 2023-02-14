@@ -1,15 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Banner from "./Banner.js"
 
 function App() {
   return (
     <div className="App">
-      <div className="black-nav">
-        <h4 className="button">HAEDAL</h4>
-        <h4 className="button">메뉴1</h4>
-        <h4 className="button">메뉴2</h4>
-        <h4 className="button">메뉴3</h4>
-    </div>
+      <Banner />
     </div>
   );
 }
