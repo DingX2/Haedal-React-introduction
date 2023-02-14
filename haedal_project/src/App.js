@@ -1,6 +1,10 @@
 import "./App.css";
 import CardNews from "./CardNews";
 
+const OPTIONS = {};
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
 function App() {
   return (
     <div className="App">
@@ -11,8 +15,8 @@ function App() {
       {/* 공지*/}
       {/* 카드뉴스*/}
       <div>카드뉴스</div>
-      <CardNews />
-
+      {/* <CardNews />*/}
+      <CardNews slides={SLIDES} options={OPTIONS} />
       {/*  버튼    */}
       {/* 지원하기*/}
       {/* 하단 상세페이지*/}

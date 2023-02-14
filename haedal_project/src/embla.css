@@ -1,107 +1,101 @@
 .embla {
-    overflow: hidden;
-    position: relative;
-    padding-top: 30px;
-    width: max-content;
-    height: fit-content;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-height: 19rem;
+  padding: 1.6rem;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+.embla__slide__img {
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+}
+.embla__slide__number {
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-radius: 50%;
+  background-color: rgba(var(--background-site-rgb-value), 0.85);
+  line-height: 4.6rem;
+  font-weight: 900;
+  text-align: center;
+  pointer-events: none;
+}
+.embla__slide__number > span {
+  color: var(--brand-primary);
+  background-image: linear-gradient(
+    45deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.embla-infinite-scroll {
+  position: relative;
+  flex: 0 0 15rem;
+  min-width: 0;
+  height: var(--slide-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.embla-infinite-scroll__spinner {
+  display: none;
+  border: 0.4rem solid rgba(var(--text-high-contrast-rgb-value), 0.2);
+  border-left: 0.4rem solid var(--text-high-contrast);
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-indent: -9999em;
+  animation: loading 1.1s infinite linear;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+.embla-infinite-scroll__spinner:after {
+  border-radius: inherit;
+  width: 5rem;
+  height: 5rem;
+}
+.embla-infinite-scroll--loading-more > .embla-infinite-scroll__spinner {
+  display: inline-flex;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
   }
-  .embla__viewport {
-    overflow: hidden;
-    margin-left: -100px;
-    
+  100% {
+    transform: rotate(360deg);
   }
-  .embla__container {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    margin-left: calc(var(--slide-spacing) * -1);
-  }
-  .embla__slide {
-    flex: 0 0 var(--slide-size);
-    min-width: 0;
-    padding-left: var(--slide-spacing);
-    position: relative;
-  }
-  .embla__slide__img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .embla__slide__number {
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: 1;
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    border-radius: 50%;
-    background-color: rgba(var(--background-site-rgb-value), 0.85);
-    line-height: 4.6rem;
-    font-weight: 900;
-    text-align: center;
-    pointer-events: none;
-  }
-  .embla__slide__number > span {
-    color: var(--brand-primary);
-    background-image: linear-gradient(
-      45deg,
-      var(--brand-primary),
-      var(--brand-secondary)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .embla-infinite-scroll {
-    position: relative;
-    flex: 0 0 15rem;
-    min-width: 0;
-    height: var(--slide-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .embla-infinite-scroll__spinner {
-    display: none;
-    border: 0.4rem solid rgba(var(--text-high-contrast-rgb-value), 0.2);
-    border-left: 0.4rem solid var(--text-high-contrast);
-    font-size: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    text-indent: -9999em;
-    animation: loading 1.1s infinite linear;
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-  }
-  .embla-infinite-scroll__spinner:after {
-    border-radius: inherit;
-    width: 5rem;
-    height: 5rem;
-  }
-  .embla-infinite-scroll--loading-more > .embla-infinite-scroll__spinner {
-    display: inline-flex;
-  }
-  @keyframes loading {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
+}
