@@ -11,18 +11,19 @@
   display: flex;
   flex-direction: row;
   height: auto;
+  justify-content: space-space-evenly;
   margin-left: calc(var(--slide-spacing) * -1);
 }
 .embla__slide {
-  flex: 0 0 var(--slide-size);
+  flex: 100%;
   min-width: 0;
-  padding-left: var(--slide-spacing);
+  padding-left: 20px;
   position: relative;
 }
 .embla__slide__img {
   display: block;
   height: var(--slide-height);
-  width: 100%;
+  width: fit-content;
   object-fit: cover;
 }
 .embla__slide__number {
