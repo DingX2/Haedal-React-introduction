@@ -1,5 +1,6 @@
 import "./App.css";
-import Banner from "./Banner.js"
+import Banner from "./Banner.js";
+import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";
 
 function App() {
@@ -7,10 +8,10 @@ function App() {
     <div className="App">
 
       <Banner />
-
-      <br/><br/><br/><br/>
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
+      <br/><br/><br/>
+      <MainPage/>
       {/* 메인페이지*/}
       {/* 캘린더*/}
       {/* 공지*/}
