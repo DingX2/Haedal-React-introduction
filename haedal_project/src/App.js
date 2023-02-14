@@ -7,6 +7,8 @@ function App() {
     <div className="App">
 
       <Banner />
+
+      <br/><br/><br/><br/>
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
       {/* 메인페이지*/}
