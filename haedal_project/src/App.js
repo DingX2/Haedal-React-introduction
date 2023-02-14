@@ -1,13 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
+import CardNews from "./CardNews";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">이수현 수정중... </header>
-      <header className="App-header">남동우 수정중..... </header>
-      <header className="App-header">김현주 수정중... </header>
-      <header className="App-header">조현호 수정중... </header>
+      {/*아래는 네비게이션바*/}
+      {/* 메인페이지 슬라이더*/}
+      {/* 메인페이지*/}
+      {/* 캘린더*/}
+      {/* 공지*/}
+      {/* 카드뉴스*/}
+      <div>카드뉴스</div>
+      <CardNews />
+
+      {/*  버튼    */}
+      {/* 지원하기*/}
+      {/* 하단 상세페이지*/}
     </div>
   );
 }
