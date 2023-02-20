@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";
+import SwiperCards from './SwiperCards';
 
 import "./css/base.css";
 import "./css/sandbox.css";
@@ -25,7 +26,7 @@ function App() {
         {/* 공지*/}
         {/* 카드뉴스*/} 
         {/* <CardNews />*/}
-        <CardNews slides={SLIDES} options={OPTIONS} />
+        <SwiperCards />
         {/*  버튼    */}
         {/* 지원하기*/}
         {/* 하단 상세페이지*/}
