@@ -21,7 +21,6 @@ const App2 = () => (
     <section className="sandbox__carousel">
       <CardNews slides={SLIDES} options={OPTIONS} />
     </section>
-    <Footer />
   </main>
 );
 
