@@ -1,13 +1,11 @@
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.css'
+import "bootstrap/dist/css/bootstrap.css";
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
+import Calender from "./Calender";
+import Footer from "./Footer";
 import CardNews from "./CardNews";
-import SwiperCards from './SwiperCards';
-
-import "./css/base.css";
-import "./css/sandbox.css";
-import "./css/embla.css";
+import Apply from "./Apply";
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -19,17 +17,20 @@ function App() {
       <Banner />
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
-      <br/><br/><br/>
-      <MainPage/>
+      <br />
+      <br />
+      <br />
       {/* 메인페이지*/}
-      {/* 캘린더*/}
-      {/* 공지*/}
-      {/* 카드뉴스*/} 
-      {/* <CardNews />*/}
-      <SwiperCards />
+      <MainPage />
+      {/* 캘린더 & 공지 */}
+      <Calender />
+      {/* 카드뉴스*/}
+      <CardNews />
       {/*  버튼    */}
       {/* 지원하기*/}
+      <Apply />
       {/* 하단 상세페이지*/}
+      <Footer />
     </div>
   );
 }

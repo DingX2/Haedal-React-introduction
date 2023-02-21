@@ -1,149 +1,67 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import imageByIndex from './imageByIndex'
-import Autoplay from 'embla-carousel-autoplay'
+import React from "react";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import SwiperCore, { Autoplay } from "swiper";
+import "./CardNews.css";
 
-const mockApiCall = (minWait, maxWait, callback) => {
-  const min = Math.ceil(minWait)
-  const max = Math.floor(maxWait)
-  const wait = Math.floor(Math.random() * (max - min + 1)) + min
-  setTimeout(callback, wait)
-}
+const images = [
+  "./images/card1.png",
+  "./images/card2.png",
+  "./images/card3.png",
+  "./images/card4.png",
+  "./images/card5.png",
+  "./images/card4.png",
+  "./images/card5.png",
+  "./images/card4.png",
+  "./images/card5.png",
+];
 
-const EmblaCarousel = (props) => {
-  const { options, slides: propSlides } = props
-  const scrollListener = useRef(() => undefined)
-  const [slides, setSlides] = useState(propSlides)
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
-  const [hasMoreToLoad, setHasMoreToLoad] = useState(true)
-  const [loadingMore, setLoadingMore] = useState(false)
-  const [pointerIsDown, setPointerIsDown] = useState(false)
-
-  const setPointerDown = useCallback(() => setPointerIsDown(true), [])
-  const setPointerNotDown = useCallback(() => setPointerIsDown(false), [])
-
-  const lastSlideIsInView = useCallback(() => {
-    if (!emblaApi) return false
-    const lastSlide = emblaApi.slideNodes().length - 1
-    return emblaApi.slidesInView().indexOf(lastSlide) !== -1
-  }, [emblaApi])
-
-  const onScroll = useCallback(() => {
-    if (!emblaApi) return
-    setLoadingMore((isLoadingMore) => {
-      if (isLoadingMore) return true
-      const shouldLoadMore = lastSlideIsInView()
-      if (shouldLoadMore) emblaApi.off('scroll', scrollListener.current)
-      return shouldLoadMore
-    })
-  }, [emblaApi, setLoadingMore, lastSlideIsInView])
-
-  const addScrollListener = useCallback(() => {
-    if (!emblaApi || !hasMoreToLoad) return
-    scrollListener.current = () => onScroll()
-    emblaApi.on('scroll', scrollListener.current)
-  }, [emblaApi, hasMoreToLoad, onScroll])
-
-  const reloadEmbla = useCallback(() => {
-    if (!emblaApi) return
-    const oldEngine = emblaApi.internalEngine()
-    emblaApi.reInit()
-    const newEngine = emblaApi.internalEngine()
-    Object.assign(newEngine.scrollBody, oldEngine.scrollBody)
-    Object.assign(newEngine.location, oldEngine.location)
-    Object.assign(newEngine.target, oldEngine.target)
-    const { index } = newEngine.scrollTarget.byDistance(0, false)
-    newEngine.index.set(index)
-    newEngine.animation.start()
-    setLoadingMore(false)
-  }, [emblaApi])
-
-  useEffect(() => {
-    if (!emblaApi || slides.length === emblaApi.slideNodes().length - 1) return
-    const engine = emblaApi.internalEngine()
-    const boundsActive = engine.limit.reachedMax(engine.target.get())
-    engine.scrollBounds.toggleActive(boundsActive)
-  }, [emblaApi, slides])
-
-  useEffect(() => {
-    if (!emblaApi || !hasMoreToLoad || pointerIsDown) return
-    if (slides.length === emblaApi.slideNodes().length - 1) return
-    reloadEmbla()
-    addScrollListener()
-  }, [
-    emblaApi,
-    slides,
-    pointerIsDown,
-    hasMoreToLoad,
-    reloadEmbla,
-    addScrollListener,
-  ])
-
-  useEffect(() => {
-    if (!emblaApi || hasMoreToLoad) return
-    if (slides.length === emblaApi.slideNodes().length) return
-    if (pointerIsDown && !lastSlideIsInView()) return
-    reloadEmbla()
-    emblaApi.off('pointerDown', setPointerDown)
-    emblaApi.off('pointerUp', setPointerNotDown)
-  }, [
-    emblaApi,
-    slides,
-    hasMoreToLoad,
-    pointerIsDown,
-    setPointerDown,
-    setPointerNotDown,
-    reloadEmbla,
-    lastSlideIsInView,
-  ])
-
-  useEffect(() => {
-    if (!emblaApi) return
-    emblaApi.on('pointerDown', setPointerDown)
-    emblaApi.on('pointerUp', setPointerNotDown)
-    addScrollListener()
-  }, [emblaApi, setPointerDown, setPointerNotDown, addScrollListener])
-
-  useEffect(() => {
-    if (!loadingMore) return
-    mockApiCall(1000, 2000, () => {
-      setSlides((currentSlides) => {
-        if (currentSlides.length === 20) {
-          setHasMoreToLoad(false)
-          return currentSlides
-        }
-        const newSlideCount = currentSlides.length + 5
-        return Array.from(Array(newSlideCount).keys())
-      })
-    })
-  }, [setSlides, loadingMore])
+function CardNews() {
+  const swiperRef = useRef(null);
+  SwiperCore.use([Autoplay]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <img
-                className="embla__slide__img"
-                src={imageByIndex(index)}
-                alt="Your alt text"
-              />
-            </div>
-          ))}
-          {hasMoreToLoad && (
-            <div
-              className={'embla-infinite-scroll'.concat(
-                loadingMore ? ' embla-infinite-scroll--loading-more' : '',
-              )}
-            >
-              <span className="embla-infinite-scroll__spinner" />
-            </div>
-          )}
+    <div className="cardnews_body">
+      <div className="cardnews_title">
+        <div className="cardnews_title_big">
+          <span className="cardnews_title_quote_open">“</span>
+          <span>오 누가 이걸 몰라?!</span>
+          <span className="cardnews_title_quote_close">”</span>
+        </div>
+        <div className="cardnews_title_small">
+          <span>해달 오누이 IT 카드뉴스</span>
         </div>
       </div>
+      <div
+        onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
+        onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
+      >
+        <Swiper
+          ref={swiperRef}
+          spaceBetween={30}
+          slidesPerView="auto"
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false, // 클릭 후 자동재생 비활성화 방지
+          }}
+          loop={true} // 무한 슬라이드
+          speed={3000} // 카드 하나당 시간
+          pauseOnMouseEnter={true}
+        >
+          {images.map((img, index) => (
+            <SwiperSlide className="SwiperCards">
+              <img
+                src={img}
+                alt={`img${index}`}
+                style={{ background: "gray", height: "200px", width: "200px" }}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
-  )
+  );
 }
 
-export default EmblaCarousel
+export default CardNews;

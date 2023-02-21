@@ -35,7 +35,6 @@ const Navbar = () => {
               Fifth
             </a>
           </li>
-
         </ul>
       </nav>
       <div
@@ -46,10 +45,9 @@ const Navbar = () => {
         tabindex="0"
       >
         <h4 id="scrollspyHeading1">Main Page</h4>
-        <MainPage></MainPage>
+
         <h4 id="scrollspyHeading2">Card News</h4>
-        <CardNews></CardNews>
-        
+        <CardNews />
       </div>
     </div>
   );
