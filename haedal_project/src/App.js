@@ -1,5 +1,5 @@
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.css'
+import "bootstrap/dist/css/bootstrap.css";
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";
@@ -24,14 +24,12 @@ function App() {
       {/* 캘린더 & 공지 */}
       <Calender />
       {/* 카드뉴스*/}
-      {/* <CardNews />*/}
       <CardNews slides={SLIDES} options={OPTIONS} />
       {/*  버튼    */}
       {/* 지원하기*/}
       <div>지원하기</div>
       {/* 하단 상세페이지*/}
-
-      <div>지원하기</div>
+      <Footer />
     </div>
   );
 }
