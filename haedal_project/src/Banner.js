@@ -1,15 +1,58 @@
 import React from "react";
-import './Banner.css';
+import CardNews from "./CardNews";
+import MainPage from "./MainPage";
 
-function Banner () { return (
-    <div className="Banner">
-    <div className="black-nav">
-        <h4 className="button">HAEDAL</h4>
-        <h4 className="button">메뉴1</h4>
-        <h4 className="button">메뉴2</h4>
-        <h4 className="button">메뉴3</h4>
-    </div>
-    </div>
-)}
+const Navbar = () => {
+  return (
+    <div>
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">
+          HAEDAL
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">
+              MainPage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">
+              CardNews
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">
+              Third
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">
+              Fourth
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">
+              Fifth
+            </a>
+          </li>
 
-export default Banner;
+        </ul>
+      </nav>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-offset="0"
+        class="scrollspy-example"
+        tabindex="0"
+      >
+        <h4 id="scrollspyHeading1">Main Page</h4>
+        <MainPage></MainPage>
+        <h4 id="scrollspyHeading2">Card News</h4>
+        <CardNews></CardNews>
+        
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
