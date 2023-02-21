@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css'
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";

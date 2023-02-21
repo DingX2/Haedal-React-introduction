@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import CardNews from "./CardNews";
+import MainPage from "./MainPage";
 import App from "./App";
+import 'bootstrap/dist/css/bootstrap.css'
 
 import Header from "./Header";
 import Footer from "./Footer";
