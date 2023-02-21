@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css'
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";
@@ -14,7 +15,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Banner />
       <div className="App">
         {/*아래는 네비게이션바*/}
