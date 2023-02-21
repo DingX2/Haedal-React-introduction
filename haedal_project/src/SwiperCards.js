@@ -38,7 +38,7 @@ function SwiperCards() {
           disableOnInteraction: false, // 클릭 후 자동재생 비활성화 방지
         }}
         loop={true} // 무한 슬라이드
-        speed={3000} // 높을수록 느림
+        speed={3000} // 카드 하나당 시간
         freeMode={false}
         loopAdditionalSlides={9}
       >
