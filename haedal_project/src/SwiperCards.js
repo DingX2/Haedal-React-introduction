@@ -39,12 +39,10 @@ function SwiperCards() {
         }}
         loop={true} // 무한 슬라이드
         speed={3000} // 카드 하나당 시간
-        freeMode={false}
-        loopAdditionalSlides={9}
       >
         {images.map((img, index) => (
           <SwiperSlide className='SwiperCards'>
-            <img src={img} alt="img" style={{background: "gray", height: '200px', width: '200px'}}/>
+            <img src={img} alt={`img${index}`} style={{background: "gray", height: '200px', width: '200px'}}/>
           </SwiperSlide>
         ))}
       </Swiper>
