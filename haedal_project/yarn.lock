@@ -8486,10 +8486,10 @@
     "picocolors" "^1.0.0"
     "stable" "^0.1.8"
 
-"swiper@^9.0.4":
-  "integrity" "sha512-YH4sUh68DYw7vcoBZQ+DeBV6/wLZIRf8dZ4CzkvRTcvDPkIF6oweBdOjKnsXtoPCSUQbtqbZcLRghkfOtd5UYA=="
-  "resolved" "https://registry.npmjs.org/swiper/-/swiper-9.0.4.tgz"
-  "version" "9.0.4"
+"swiper@^9.0.5":
+  "integrity" "sha512-UiLQ5fvn8L3ZZpaPa+9oiwKwhVGQt5TVc0UuXxFKHyTQe8g2E3vbPMiMfIGb6NhNGj5ntsSDyyNgg4qVmWlJkQ=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-9.0.5.tgz"
+  "version" "9.0.5"
   dependencies:
     "ssr-window" "^4.0.2"
 
