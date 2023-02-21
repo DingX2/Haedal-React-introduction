@@ -1,4 +1,5 @@
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.css'
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
 import CardNews from "./CardNews";
@@ -6,7 +7,6 @@ import CardNews from "./CardNews";
 function App() {
   return (
     <div className="App">
-
       <Banner />
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
