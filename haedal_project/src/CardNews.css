@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+.swiper-wrapper{
+  transition-timing-function : linear;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+.cardnews_body {
+  margin-top: 20rem;
+  font-family: 'Inter';
+}
+.cardnews_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardnews_title_big {
+  display: flex;
+  align-items: center;
+}
+.cardnews_title_big span {
+  color: #000D58;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.cardnews_title_small {
+  margin: 1.5rem 0 3rem 0;
+  display: flex;
+  align-items: center;
+}
+.cardnews_title_small span{
+  color: #FFE171;
+  background: #000D58;
+  font-size: 2rem;
+  padding: 0.4rem;
+  line-height: 1;
+}
+
+.cardnews_title_big .cardnews_title_quote_open {
+  font-size: 8rem;
+  color: rgba(0, 13, 88, 0.5);
+  position: relative;
+  top: 0.5rem;
+  left: -1rem;
+  font-family: 'Inika';
+}
+
+.cardnews_title_big .cardnews_title_quote_close {
+  font-size: 8rem;
+  color: rgba(0, 13, 88, 0.5);
+  position: relative;
+  bottom: -4rem;
+  right: -1rem;
+  font-family: 'Inika';
+}

@@ -2,9 +2,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
-import CardNews from "./CardNews";
 import Calender from "./Calender";
 import Footer from "./Footer";
+import CardNews from "./CardNews";
+import Apply from "./Apply";
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -19,15 +20,15 @@ function App() {
       <br />
       <br />
       <br />
-      <MainPage />
       {/* 메인페이지*/}
+      <MainPage />
       {/* 캘린더 & 공지 */}
       <Calender />
       {/* 카드뉴스*/}
-      <CardNews slides={SLIDES} options={OPTIONS} />
+      <CardNews />
       {/*  버튼    */}
       {/* 지원하기*/}
-      <div>지원하기</div>
+      <Apply />
       {/* 하단 상세페이지*/}
       <Footer />
     </div>

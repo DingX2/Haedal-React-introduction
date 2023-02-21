@@ -1,8 +1,8 @@
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
-  --slide-height: 19rem;
-  padding: 1.6rem;
+  --slide-height: 15rem;
+  padding: 1.6rem 0;
 }
 .embla__viewport {
   overflow: hidden;
@@ -11,22 +11,22 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  justify-content: space-space-evenly;
+  width: 15rem;
   margin-left: calc(var(--slide-spacing) * -1);
 }
 .embla__slide {
-  flex: 100%;
+  flex: 0 0 var(--slide-size);
   min-width: 0;
-  padding-left: 20px;
+  padding-left: var(--slide-spacing);
   position: relative;
 }
 .embla__slide__img {
   display: block;
   height: var(--slide-height);
-  width: fit-content;
+  width: var(--slide-height);
   object-fit: cover;
 }
-.embla__slide__number {
+/* .embla__slide__number {
   width: 4.6rem;
   height: 4.6rem;
   z-index: 1;
@@ -57,7 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-}
+} */
 .embla-infinite-scroll {
   position: relative;
   flex: 0 0 15rem;
