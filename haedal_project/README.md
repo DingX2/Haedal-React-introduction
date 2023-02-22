@@ -9,5 +9,4 @@ npm i react react-dom @trendyol-js/react-carousel --save //carousel 사용 안�
 npm install -g swiper@9.0.4
 npm install -g bootstrap@8.5.5
 yarn add gsap
-npx expo install @expo/html-elements
 ```
