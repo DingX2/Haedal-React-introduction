@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
-import "./CardNews.css";
+import "./css/CardNews.css";
 
 const images = [
   "./img/card1.png",
@@ -62,7 +62,7 @@ function CardNews() {
               <img
                 src={img}
                 alt={`img${index}`}
-                style={{height: "200px", width: "200px" }}
+                style={{height: "360px", width: "360px" }}
               />
             </SwiperSlide>
           ))}

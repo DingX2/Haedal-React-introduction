@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
+:root {
+  --quote-size: 80px;
+  --font-size-big: 48px;
+  --font-size-small: 32px;
+
+  --space-basic: 32px;
+}
+
 .swiper-wrapper{
   transition-timing-function : linear;
 }
@@ -9,7 +17,7 @@
 }
 
 .cardnews_body {
-  margin-top: 20rem;
+  margin-top: calc(var(--space-basic) * 8);;
   font-family: 'Inter';
 }
 .cardnews_title {
@@ -24,38 +32,39 @@
 }
 .cardnews_title_big span {
   color: #000D58;
-  font-size: 3rem;
+  font-size: var(--font-size-big);
   line-height: 1;
   font-weight: 600;
 }
 
 .cardnews_title_small {
-  margin: 1.5rem 0 3rem 0;
+  margin-top: var(--space-basic);
+  margin-bottom: calc(var(--space-basic) * 2);
   display: flex;
   align-items: center;
 }
 .cardnews_title_small span{
   color: #FFE171;
   background: #000D58;
-  font-size: 2rem;
-  padding: 0.4rem;
+  font-size: var(--font-size-small);
+  padding: calc(var(--space-basic) / 6) calc(var(--space-basic) / 4);
   line-height: 1;
 }
 
 .cardnews_title_big .cardnews_title_quote_open {
-  font-size: 8rem;
+  font-size: var(--quote-size);
   color: rgba(0, 13, 88, 0.5);
   position: relative;
-  top: 0.5rem;
-  left: -1rem;
+  top: -5px;
+  left: -10px;
   font-family: 'Inika';
 }
 
 .cardnews_title_big .cardnews_title_quote_close {
-  font-size: 8rem;
+  font-size: var(--quote-size);
   color: rgba(0, 13, 88, 0.5);
   position: relative;
-  bottom: -4rem;
-  right: -1rem;
+  bottom: -40px;
+  right: -10px;
   font-family: 'Inika';
 }
