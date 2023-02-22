@@ -58,10 +58,11 @@ function CardNews() {
           speed={speed} // 카드 하나당 시간
         >
           {images.map((img, index) => (
-            <SwiperSlide className="SwiperCards">
+            <SwiperSlide>
               <img
+                className='cards'
                 src={img}
-                alt={`img${index}`}
+                alt={`card${index}`}
                 style={{height: "360px", width: "360px" }}
               />
             </SwiperSlide>
