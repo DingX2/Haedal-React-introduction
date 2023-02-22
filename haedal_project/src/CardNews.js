@@ -38,11 +38,9 @@ function CardNews() {
       <div
         onMouseEnter={() => {
           swiperRef.current.swiper.autoplay.stop();
-          console.log(swiperRef.current.swiper.autoplay.running);
         }}
         onMouseLeave={() => {
           swiperRef.current.swiper.autoplay.start();
-          console.log(swiperRef.current.swiper.autoplay.running);
           setTimeout(() => {
             swiperRef.current.swiper.autoplay.start();
           },3000)
