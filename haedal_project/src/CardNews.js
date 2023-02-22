@@ -1,23 +1,25 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
 import "./CardNews.css";
 
 const images = [
-  "./images/card1.png",
-  "./images/card2.png",
-  "./images/card3.png",
-  "./images/card4.png",
-  "./images/card5.png",
-  "./images/card4.png",
-  "./images/card5.png",
-  "./images/card4.png",
-  "./images/card5.png",
+  "./img/card1.png",
+  "./img/card2.png",
+  "./img/card3.png",
+  "./img/card4.png",
+  "./img/card5.png",
+  "./img/card1.png",
+  "./img/card2.png",
+  "./img/card3.png",
+  "./img/card4.png",
+  "./img/card5.png",
 ];
 
 function CardNews() {
+  const [speed, setSpeed] = useState(3000);
   const swiperRef = useRef(null);
   SwiperCore.use([Autoplay]);
 
@@ -34,8 +36,17 @@ function CardNews() {
         </div>
       </div>
       <div
-        onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
-        onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
+        onMouseEnter={() => {
+          swiperRef.current.swiper.autoplay.stop();
+          console.log(swiperRef.current.swiper.autoplay.running);
+        }}
+        onMouseLeave={() => {
+          swiperRef.current.swiper.autoplay.start();
+          console.log(swiperRef.current.swiper.autoplay.running);
+          setTimeout(() => {
+            swiperRef.current.swiper.autoplay.start();
+          },3000)
+        }}
       >
         <Swiper
           ref={swiperRef}
@@ -46,15 +57,14 @@ function CardNews() {
             disableOnInteraction: false, // 클릭 후 자동재생 비활성화 방지
           }}
           loop={true} // 무한 슬라이드
-          speed={3000} // 카드 하나당 시간
-          pauseOnMouseEnter={true}
+          speed={speed} // 카드 하나당 시간
         >
           {images.map((img, index) => (
             <SwiperSlide className="SwiperCards">
               <img
                 src={img}
                 alt={`img${index}`}
-                style={{ background: "gray", height: "200px", width: "200px" }}
+                style={{height: "200px", width: "200px" }}
               />
             </SwiperSlide>
           ))}
