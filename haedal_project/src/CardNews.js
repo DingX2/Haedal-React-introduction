@@ -6,15 +6,15 @@ import SwiperCore, { Autoplay } from "swiper";
 import "./CardNews.css";
 
 const images = [
-  "./images/card1.png",
-  "./images/card2.png",
-  "./images/card3.png",
-  "./images/card4.png",
-  "./images/card5.png",
-  "./images/card4.png",
-  "./images/card5.png",
-  "./images/card4.png",
-  "./images/card5.png",
+  "./img/card1.png",
+  "./img/card2.png",
+  "./img/card3.png",
+  "./img/card4.png",
+  "./img/card5.png",
+  "./img/card4.png",
+  "./img/card5.png",
+  "./img/card4.png",
+  "./img/card5.png",
 ];
 
 function CardNews() {
