@@ -58,12 +58,13 @@ function CardNews() {
               {images.map((img, index) => (
                 <SwiperSlide className="SwiperCards">
                   <img
+                    className="Cardnews-img"
                     src={img}
                     alt={`img${index}`}
                     style={{
                       background: "gray",
-                      height: "300px",
-                      width: "300px",
+                      height: "250px",
+                      width: "250px",
                     }}
                   />
                 </SwiperSlide>
