@@ -29,8 +29,8 @@ function Footer() {
       <div className='footer_contact'>
         <span>Contact</span>
         <ul>
-          <li><span>010-8232-0418(김은정)</span></li>
-          <li><span>010-5210-2039(김아진)</span></li>
+          <li><span>010-8232-0418 (김은정)</span></li>
+          <li><span>010-5210-2039 (김아진)</span></li>
         </ul>
       </div>
       <div className='footer_madeBy'>
