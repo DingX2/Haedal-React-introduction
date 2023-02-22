@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
+.Cardnews-img{
+
+}
+
+.swiper-container{
+  display:block 
+}
+
 .swiper-wrapper{
   transition-timing-function : linear;
 }
 
+.swiper-view{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+}
+
 .swiper-slide {
   width: auto;
+  display:block
 }
 
 .cardnews_body {
-  margin-top: 20rem;
+  margin-top: 5rem;
   font-family: 'Inter';
 }
 .cardnews_title {
