@@ -150,15 +150,14 @@ const url =
 
 function Apply() {
   const { useState, useRef, useEffect } = React;
-  const timer = setTimeout(() => console.log("Initial timeout!"), 1000);
+  const timer = setTimeout(() => console.log("Initial timeout!"), 2000);
   clearTimeout(timer);
 
   return (
     <div>
       <div className="apply">
         <div className="apply-view">
-          <img src="img/apply.png" alt="apply" />
-
+          <span />
           <button
             class="apply-button"
             img
@@ -166,14 +165,14 @@ function Apply() {
             alt="plane"
             onClick={link}
           >
-            <span>
-              지원하기{" "}
+            <span className="apply-contents">
+              <p></p> 지원하기{" "}
               <img
                 className="apply-plane-img"
                 src="img/icon_form.png"
                 alt="plane"
               />
-            </span>{" "}
+            </span>
             <p></p>
             <span class="success">
               <svg viewBox="0 0 16 16">
