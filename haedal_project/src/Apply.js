@@ -136,16 +136,23 @@ document.querySelectorAll(".apply-button").forEach((button) => {
 });
 
 const link = () => {
-  window.open(url, "_blank", `height=${height}, width=${width}`);
+  setTimeout(
+    () => window.open(url, "_blank", `height=${height}, width=${width}`),
+    3000
+  );
 };
 
 // 화면 사이즈 가져오기
 const height = window?.screen?.height;
 const width = window?.screen?.width;
 const url =
-  "https://docs.google.com/forms/d/1hU5wG3pfZ6U5m-eEUsMSToJ4AxzEQHvVKrQnRH4_4hQ/edit";
+  "https://docs.google.com/forms/d/e/1FAIpQLSchlsp4vKxJ92fUYguzvnbvqjzgVVp1_6gr3-iTNgEXUpc9Pw/viewform?usp=sf_link";
 
 function Apply() {
+  const { useState, useRef, useEffect } = React;
+  const timer = setTimeout(() => console.log("Initial timeout!"), 1000);
+  clearTimeout(timer);
+
   return (
     <div>
       <div className="apply">
