@@ -1,15 +1,30 @@
-.button {
-    --primary: #F6F8FF;
-    --primary-dark: #D1D6EE;
-    --primary-darkest: #8A91B4;
+.apply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply-plane-img{
+    display: var(--right-body-background);
+    z-index: 1;
+}
+
+.apply-view{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.apply-button {
+    --primary: #000D58;
+    --primary-dark: #000940;
+    --primary-darkest: #00072E;
     --shadow: rgba(0, 0, 0, 0.3);
-    --text: #362A89;
+    --text: #FFE171;
     --text-opacity: 1;
-    --success: #EEECFF;
+    --success: #000D58;
     --success-x: -12;
     --success-stroke: 14;
     --success-opacity: 0;
-    --border-radius: 7;
+    --border-radius: 2;
     --overflow: hidden;
     --x: 0;
     --y: 0;
@@ -52,25 +67,35 @@
     position: relative;
     border: 0;
     padding: 8px 0;
-    min-width: 100px;
+    min-width: 203px;
+    max-height: 50px;
+
+    border-right: #FFE171;
+    border-bottom: #FFE171;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+
     text-align: center;
+    
     margin: 0;
     line-height: 24px;
-    font-family: inherit;
+    font-family: Arial;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 24px;
     background: none;
     outline: none;
     color: var(--text);
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
   }
-  .button .plane,
-  .button .trails {
+  .apply-button .plane,
+  .apply-button .trails {
     pointer-events: none;
     position: absolute;
   }
-  .button .plane {
+  .apply-button .plane {
     left: 0;
     top: 0;
     right: 0;
@@ -78,8 +103,8 @@
     filter: drop-shadow(0 3px 6px var(--shadow));
     transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px)) rotate(calc(var(--rotate) * 1deg)) translateZ(0);
   }
-  .button .plane .left,
-  .button .plane .right {
+  .apply-button .plane .left,
+  .apply-button .plane .right {
     position: absolute;
     left: 0;
     top: 0;
@@ -88,9 +113,9 @@
     opacity: var(--plane-opacity);
     transform: translate(calc(var(--plane-x) * 1px), calc(var(--plane-y) * 1px)) translateZ(0);
   }
-  .button .plane .left:before, .button .plane .left:after,
-  .button .plane .right:before,
-  .button .plane .right:after {
+  .apply-button .plane .left:before, .apply-button .plane .left:after,
+  .apply-button .plane .right:before,
+  .apply-button .plane .right:after {
     content: "";
     position: absolute;
     left: 0;
@@ -103,7 +128,7 @@
     background: var(--background, var(--left-wing-background));
     clip-path: polygon(calc(var(--first-x, var(--left-wing-first-x)) * 1%) calc(var(--first-y, var(--left-wing-first-y)) * 1%), calc(var(--second-x, var(--left-wing-second-x)) * 1%) calc(var(--second-y, var(--left-wing-second-y)) * 1%), calc(var(--third-x, var(--left-wing-third-x)) * 1%) calc(var(--third-y, var(--left-wing-third-y)) * 1%));
   }
-  .button .plane .left:after {
+  .apply-button .plane .left:after {
     --part-x: -1%;
     --z-index: 1;
     --background: var(--left-body-background);
@@ -114,7 +139,7 @@
     --third-x: var(--left-body-third-x);
     --third-y: var(--left-body-third-y);
   }
-  .button .plane .right:before {
+  .apply-button .plane .right:before {
     --part-x: -1%;
     --z-index: 2;
     --background: var(--right-wing-background);
@@ -125,7 +150,7 @@
     --third-x: var(--right-wing-third-x);
     --third-y: var(--right-wing-third-y);
   }
-  .button .plane .right:after {
+  .apply-button .plane .right:after {
     --part-x: 0;
     --z-index: 1;
     --background: var(--right-body-background);
@@ -136,7 +161,7 @@
     --third-x: var(--right-body-third-x);
     --third-y: var(--right-body-third-y);
   }
-  .button .trails {
+  .apply-button .trails {
     display: block;
     width: 33px;
     height: 64px;
@@ -150,13 +175,13 @@
     stroke-dashoffset: calc(var(--trails-stroke) * 1px);
     transform: rotate(68deg) translateZ(0);
   }
-  .button span {
+  .apply-button span {
     display: block;
     position: relative;
     z-index: 4;
     opacity: var(--text-opacity);
   }
-  .button span.success {
+  .apply-button span.success {
     z-index: 0;
     position: absolute;
     left: 0;
@@ -166,7 +191,7 @@
     opacity: var(--success-opacity);
     color: var(--success);
   }
-  .button span.success svg {
+  .apply-button span.success svg {
     display: inline-block;
     vertical-align: top;
     width: 16px;
@@ -193,7 +218,7 @@
     box-sizing: inherit;
   }
   
-  body {
+  .body {
     overflow: hidden;
     min-height: 100vh;
     font-family: "Inter";
@@ -202,13 +227,13 @@
     align-items: center;
     background: #362A89;
   }
-  body .dribbble {
+ .body .dribbble {
     position: fixed;
     display: block;
     right: 20px;
     bottom: 20px;
   }
-  body .dribbble img {
+  .body .dribbble img {
     display: block;
     width: 76px;
   }
