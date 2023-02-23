@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@500;700&display=swap');
 
 :root {
   --quote-size: 80px;
@@ -6,6 +6,8 @@
   --font-size-small: 32px;
 
   --space-basic: 32px;
+
+  --card-size: 300px;
 }
 
 .swiper-wrapper{
@@ -13,13 +15,16 @@
 }
 
 .swiper-slide {
-  width: auto;
+  width: var(--card-size);
+  height: var(--card-size);
 }
 
 .cardnews_body {
-  margin-top: calc(var(--space-basic) * 8);;
-  font-family: 'Inter';
+  margin-top: calc(var(--space-basic) * 8);
+  display: flex;
+  flex-direction: column;
 }
+
 .cardnews_title {
   display: flex;
   flex-direction: column;
@@ -30,11 +35,13 @@
   display: flex;
   align-items: center;
 }
+
 .cardnews_title_big span {
+  font-family: 'Inter';
+  font-weight: 700;
   color: #000D58;
   font-size: var(--font-size-big);
   line-height: 1;
-  font-weight: 600;
 }
 
 .cardnews_title_small {
@@ -43,7 +50,10 @@
   display: flex;
   align-items: center;
 }
+
 .cardnews_title_small span{
+  font-family: 'Inter';
+  font-weight: 400;
   color: #FFE171;
   background: #000D58;
   font-size: var(--font-size-small);
@@ -58,6 +68,7 @@
   top: -5px;
   left: -10px;
   font-family: 'Inika';
+  font-weight: 400;
 }
 
 .cardnews_title_big .cardnews_title_quote_close {
@@ -67,4 +78,5 @@
   bottom: -40px;
   right: -10px;
   font-family: 'Inika';
+  font-weight: 400;
 }

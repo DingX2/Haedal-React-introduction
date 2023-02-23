@@ -8,8 +8,7 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import "./base.css";
-import "./sandbox.css";
+import "./css/base.css";
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
