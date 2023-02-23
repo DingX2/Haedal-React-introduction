@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+  --notice-font-big: 20px;
+  --notice-font-small: 14px;
+
+  --notice-space-basic: 6px;
+
+  --newBlack: rgba(0, 13, 88, 1);
+  --yellow: rgba(255, 225, 113, 1);
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.notice_title {
+  display: flex;
+  align-items: center;
+  background: var(--newBlack);
+  padding: 0 var(--notice-space-basic);
+  margin-bottom: calc(var(--notice-space-basic) * 2);
+}
+
+.notice_title img {
+  height: 100%;
+  margin-right: var(--notice-space-basic);
+}
+
+.notice_title span {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: var(--notice-font-big);
+  color: var(--yellow);
+  position: relative;
+  top: calc(var(--notice-space-basic) / 6);
+}
+
+.notice_text {
+  line-height: 1.2;
+}
+
+.notice_text span {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: var(--notice-font-small);
+  line-height: 1;
+  color: var(--newBlack);
+}

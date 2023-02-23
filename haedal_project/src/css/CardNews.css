@@ -2,12 +2,12 @@
 
 :root {
   --quote-size: 80px;
-  --font-size-big: 48px;
-  --font-size-small: 32px;
+  --cardnews-font-big: 48px;
+  --cardnews-font-small: 32px;
 
-  --space-basic: 32px;
+  --cardnews-space-basic: 16px;
 
-  --card-size: 300px;
+  --card-size: 250px;
 }
 
 .swiper-wrapper{
@@ -20,7 +20,7 @@
 }
 
 .cardnews_body {
-  margin-top: calc(var(--space-basic) * 8);
+  margin-top: calc(var(--cardnews-space-basic) * 8);
   display: flex;
   flex-direction: column;
 }
@@ -40,13 +40,13 @@
   font-family: 'Inter';
   font-weight: 700;
   color: #000D58;
-  font-size: var(--font-size-big);
+  font-size: var(--cardnews-font-big);
   line-height: 1;
 }
 
 .cardnews_title_small {
-  margin-top: var(--space-basic);
-  margin-bottom: calc(var(--space-basic) * 2);
+  margin-top: var(--cardnews-space-basic);
+  margin-bottom: calc(var(--cardnews-space-basic) * 2);
   display: flex;
   align-items: center;
 }
@@ -56,8 +56,8 @@
   font-weight: 400;
   color: #FFE171;
   background: #000D58;
-  font-size: var(--font-size-small);
-  padding: calc(var(--space-basic) / 6) calc(var(--space-basic) / 4);
+  font-size: var(--cardnews-font-small);
+  padding: calc(var(--cardnews-space-basic) / 4);
   line-height: 1;
 }
 
