@@ -11,11 +11,17 @@ const images = [
   "./img/card3.png",
   "./img/card4.png",
   "./img/card5.png",
+  "./img/card6.png",
+  "./img/card7.png",
+  "./img/card8.png",
   "./img/card1.png",
   "./img/card2.png",
   "./img/card3.png",
   "./img/card4.png",
   "./img/card5.png",
+  "./img/card6.png",
+  "./img/card7.png",
+  "./img/card8.png",
 ];
 
 function CardNews() {
@@ -50,7 +56,7 @@ function CardNews() {
               if (mouseEnter === false) {
                 swiperRef.current.swiper.autoplay.start();
               }
-            }, speed) // 일정 시간 뒤 마우스가 swiper 위에 없으면 autoplay 재시작
+            }, speed); // 일정 시간 뒤 마우스가 swiper 위에 없으면 autoplay 재시작
           }}
         >
           <Swiper
@@ -70,11 +76,7 @@ function CardNews() {
           >
             {images.map((img, index) => (
               <SwiperSlide>
-                <img
-                  className='cards'
-                  src={img}
-                  alt={`card${index}`}
-                />
+                <img className="cards" src={img} alt={`card${index}`} />
               </SwiperSlide>
             ))}
           </Swiper>
