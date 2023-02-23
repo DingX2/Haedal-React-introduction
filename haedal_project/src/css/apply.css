@@ -23,9 +23,15 @@
     line-height: 24px;
     font-weight: 600;
     font-size: 24px;
-    bottom: 22px;
+    bottom: 10px;
     left: 10px;
 }
+
+
+.apply-button:hover {
+    background: #ffe071bb;
+    border-radius: 5%;
+  }
 
 .apply-button {
     --primary: #000D58;
@@ -98,8 +104,10 @@
     font-weight: 600;
     font-size: 24px;
 
+    transition: all 0.2s ;
 
-    background: none;
+
+    background: #FFE171;
     outline: none;
     color: var(--text);
     -webkit-appearance: none;
@@ -233,22 +241,3 @@
     box-sizing: inherit;
   }
   
-  .body {
-    overflow: hidden;
-    min-height: 100vh;
-    font-family: "Inter";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #362A89;
-  }
- .body .dribbble {
-    position: fixed;
-    display: block;
-    right: 20px;
-    bottom: 20px;
-  }
-  .body .dribbble img {
-    display: block;
-    width: 76px;
-  }
