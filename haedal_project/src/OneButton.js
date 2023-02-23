@@ -14,6 +14,10 @@ const OneButton = (props) => (
             <div className="contentText">
                 <p> {props.content} </p>
             </div>
+
+            <div className="viewMore">
+                <p>view more</p>
+            </div>
         </div>
     </a>
   </>

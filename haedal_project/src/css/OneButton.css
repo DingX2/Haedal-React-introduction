@@ -45,3 +45,15 @@
     line-height: 48px;
     color: #000D58;
 }
+
+.viewMore{
+    position:absolute;
+    bottom: 1%;
+    right : 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: medium;
+    line-height: 48px;
+    color: #000D58;
+}
