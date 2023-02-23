@@ -19,8 +19,10 @@ const images = [
 ];
 
 function CardNews() {
-  const [speed, setSpeed] = useState(3000);
+  const [mouseEnter, setMouseEnter] = useState(false);
   const swiperRef = useRef(null);
+  let speed = useRef();
+  speed = 3000;
   SwiperCore.use([Autoplay]);
 
   return (
@@ -38,13 +40,17 @@ function CardNews() {
         </div>
         <div // onMouseEnter, onMouseLeave 넣기 위한 div>
           onMouseEnter={() => {
+            setMouseEnter(true);
             swiperRef.current.swiper.autoplay.stop();
           }}
           onMouseLeave={() => {
+            setMouseEnter(false);
             swiperRef.current.swiper.autoplay.start();
             setTimeout(() => {
-              swiperRef.current.swiper.autoplay.start();
-            }, speed) // 일정 시간 뒤 무조건 재시작
+              if (mouseEnter === false) {
+                swiperRef.current.swiper.autoplay.start();
+              }
+            }, speed) // 일정 시간 뒤 마우스가 swiper 위에 없으면 autoplay 재시작
           }}
         >
           <Swiper
