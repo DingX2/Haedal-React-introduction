@@ -6,6 +6,7 @@ import Calender from "./Calender";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
 import Apply from "./Apply";
+import Buttons from "./Buttons";
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -14,7 +15,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 function App() {
   return (
     <div className="App">
-      <Banner />
+      <Banner />s
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
       <br />
@@ -27,6 +28,7 @@ function App() {
       {/* 카드뉴스*/}
       <CardNews />
       {/*  버튼    */}
+      <Buttons/>
       {/* 지원하기*/}
       <Apply />
       {/* 하단 상세페이지*/}
