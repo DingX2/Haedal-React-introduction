@@ -1,9 +1,9 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
-import "./CardNews.css";
+import "./css/CardNews.css";
 
 const images = [
   "./img/card1.png",
@@ -19,6 +19,7 @@ const images = [
 ];
 
 function CardNews() {
+  const [speed, setSpeed] = useState(3000);
   const swiperRef = useRef(null);
   SwiperCore.use([Autoplay]);
 
@@ -35,42 +36,42 @@ function CardNews() {
             <span>해달 오누이 IT 카드뉴스</span>
           </div>
         </div>
-        <div
-          onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
-          onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
+        <div // onMouseEnter, onMouseLeave 넣기 위한 div>
+          onMouseEnter={() => {
+            swiperRef.current.swiper.autoplay.stop();
+          }}
+          onMouseLeave={() => {
+            swiperRef.current.swiper.autoplay.start();
+            setTimeout(() => {
+              swiperRef.current.swiper.autoplay.start();
+            }, speed) // 일정 시간 뒤 무조건 재시작
+          }}
         >
-          <div className="swiper-container">
-            <Swiper
-              ref={swiperRef}
-              spaceBetween={30}
-              slidesPerView="auto"
-              autoplay={{
-                delay: 0,
-                disableOnInteraction: false, // 클릭 후 자동재생 비활성화 방지
-              }}
-              loopedSlides={3}
-              centeredSlides //가운데 시작
-              loop={true} // 무한 슬라이드
-              speed={3000} // 카드 하나당 시간
-              grabCursor // 잡기 가능
-              pauseOnMouseEnter={true}
-            >
-              {images.map((img, index) => (
-                <SwiperSlide className="SwiperCards">
-                  <img
-                    className="Cardnews-img"
-                    src={img}
-                    alt={`img${index}`}
-                    style={{
-                      background: "gray",
-                      height: "250px",
-                      width: "250px",
-                    }}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          <Swiper
+            ref={swiperRef}
+            spaceBetween={30}
+            slidesPerView="auto"
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false, // 클릭 후 자동재생 비활성화 방지
+            }}
+            loop={true} // 무한 슬라이드
+            speed={speed} // 카드 하나당 시간
+            loopedSlides={3}
+            centeredSlides // 가운데 시작
+            grabCursor // 잡기 가능
+            pauseOnMouseEnter={true}
+          >
+            {images.map((img, index) => (
+              <SwiperSlide>
+                <img
+                  className='cards'
+                  src={img}
+                  alt={`card${index}`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
