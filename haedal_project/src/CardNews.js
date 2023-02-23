@@ -27,8 +27,7 @@ const images = [
 function CardNews() {
   const [mouseEnter, setMouseEnter] = useState(false);
   const swiperRef = useRef(null);
-  let speed = useRef();
-  speed = 3000;
+  const speed = 3000;
   SwiperCore.use([Autoplay]);
 
   return (
