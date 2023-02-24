@@ -22,9 +22,6 @@
   align-items: center;
 }
 
-.cardnews_body .swiper-slide:hover {
-}
-
 .cardnews_body .swiper-slide img {
   width: var(--card-size);
   height: var(--card-size);
