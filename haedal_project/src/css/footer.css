@@ -64,8 +64,8 @@
 }
 
 .footer_links img {
-  width: 2rem;
-  height: 2rem;
+  width: var(--footer-font-mid);
+  height: var(--footer-font-mid);
   margin-right: calc(var(--footer-space-basic) / 2);
   cursor: pointer;
 }
