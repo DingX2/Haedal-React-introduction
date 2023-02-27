@@ -23,16 +23,13 @@ function App() {
       <br />
       <br />
       {/* 메인페이지*/}
-      <MainPage />
       {/* 캘린더 & 공지 */}
       <Calender />
       <Notice />
       {/* 카드뉴스*/}
-      <CardNews />
       {/*  버튼    */}
       <Buttons/>
       {/* 지원하기*/}
-      <Apply />
       {/* 하단 상세페이지*/}
       <Footer />
     </div>
