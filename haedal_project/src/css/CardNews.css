@@ -1,13 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@500;700&display=swap');
 
 :root {
-  --quote-size: 80px;
-  --cardnews-font-big: 48px;
-  --cardnews-font-small: 32px;
+  --quote-size: 5rem;
+  --cardnews-font-big: 3rem;
+  --cardnews-font-small: 2rem;
 
-  --cardnews-space-basic: 16px;
+  --cardnews-space-basic: 1rem;
 
   --card-size: 250px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --quote-size: 4.5rem;
+    --cardnews-font-big: 2.5rem;
+    --cardnews-font-small: 1.5rem;
+  
+    --cardnews-space-basic: 1rem;
+  
+    --card-size: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --quote-size: 4rem;
+    --cardnews-font-big: 2.3rem;
+    --cardnews-font-small: 1.3rem;
+  
+    --cardnews-space-basic: 0.7rem;
+  
+    --card-size: 170px;
+  }
 }
 
 .cardnews_body .swiper-wrapper{
