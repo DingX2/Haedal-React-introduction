@@ -3,6 +3,8 @@ import CardNews from "./CardNews";
 import MainPage from "./MainPage";
 import Calender from "./Calender";
 import Apply from './Apply';
+import Notice from './Notice';
+import Buttons from "./Buttons";
 
 const Navbar = () => {
   return (
@@ -49,10 +51,12 @@ const Navbar = () => {
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
         <Calender />
+        <Notice />
 
         <h4 id="scrollspyHeading2"> </h4>
         <CardNews />
-
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <Buttons/>
         <h4 id="scrollspyHeading3"> </h4>
         <Apply />
       </div>
