@@ -161,7 +161,7 @@ const link = () => {
   let check = 10;
   setTimeout((check) => reload(), 7000);
 };
-
+//
 // 화면 사이즈 가져오기
 const height = window?.screen?.height;
 const width = window?.screen?.width;
