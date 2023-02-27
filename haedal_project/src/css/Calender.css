@@ -11,3 +11,19 @@
     margin-top: 10rem;
     margin-bottom: 5rem;
 }
+
+.Calender_image {
+    width: 70vw;
+}
+
+@media (max-width: 1024px) {
+    .Calender_image {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .Calender_image {
+        width: 100vw;
+    }
+}
