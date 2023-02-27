@@ -1,5 +1,11 @@
+@media screen and (min-width: 1000px) {
+    .Button_viewer{
+        margin-bottom: 50% !important;
+    }
+}
+
+
 .Button_viewer{
-    margin-top: 10%;
     margin-bottom: 100%;
 }
 
