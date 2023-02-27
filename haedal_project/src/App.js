@@ -1,13 +1,13 @@
 import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Banner from "./Banner.js";
-import MainPage from "./MainPage.js";
-import Calender from "./Calender";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
-import Apply from "./Apply";
-import Buttons from "./Buttons";
+import MainPage from "./MainPage";
+import Calender from "./Calender";
+import Apply from './Apply';
 import Notice from './Notice';
+import Buttons from "./Buttons";
+
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -16,19 +16,59 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 function App() {
   return (
     <div className="App">
-      <Banner />
-      {/*아래는 네비게이션바*/}
-      {/* 메인페이지 슬라이더*/}
-      <br />
-      <br />
-      <br />
-      {/* 메인페이지*/}
-      {/* 캘린더 & 공지 */}
-      {/* 카드뉴스*/}
-      {/*  버튼    */}
-      {/* 지원하기*/}
-      {/* 하단 상세페이지*/}
-      <Footer />
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">
+          HAEDAL
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">
+              MainPage
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">
+              CardNews
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">
+              Apply
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">
+              Fourth
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">
+              Fifth
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-offset="0"
+        class="scrollspy-example"
+        tabindex="0"
+        >
+        
+        <h4 id="scrollspyHeading1"> </h4>
+        <MainPage />
+        <Calender />
+        <Notice />
+
+        <h4 id="scrollspyHeading2"> </h4>
+        <CardNews />
+        <Buttons/>
+
+        <h4 id="scrollspyHeading3"> </h4>
+        <Apply />
+        <Footer />
+      </div>
     </div>
   );
 }

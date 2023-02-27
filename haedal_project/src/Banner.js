@@ -47,7 +47,10 @@ const Navbar = () => {
         data-bs-offset="0"
         class="scrollspy-example"
         tabindex="0"
-      >
+        style={{ 
+          position : "relative"
+        }}>
+        
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
         <Calender />
