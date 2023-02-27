@@ -1,4 +1,4 @@
-import './css/Footer.css'
+import './css/footer.css'
 
 
 {/* <div className="Footer">
