@@ -16,7 +16,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 function App() {
   return (
     <div className="App">
-      <Banner />s
+      <Banner />
       {/*아래는 네비게이션바*/}
       {/* 메인페이지 슬라이더*/}
       <br />
