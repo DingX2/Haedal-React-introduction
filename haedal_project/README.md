@@ -2,7 +2,9 @@
 
 ### 실행하는 법
 ```
-git bash 에서 git clone https://github.com/DingX2/Haedal-React-introduction.git
+# git bash 에서
+git clone https://github.com/DingX2/Haedal-React-introduction.git
+# terminal 에서
 cd haedal_projects
 npm install
 npm start
