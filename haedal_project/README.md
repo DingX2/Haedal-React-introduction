@@ -1,10 +1,12 @@
 # 해달 소개페이지 React
 
-#실행하는 법
+### 실행하는 법
+```
 git bash 에서 git clone https://github.com/DingX2/Haedal-React-introduction.git
 cd haedal_projects
 npm install
 npm start
+```
 
 ### 버전 관리
 ```
