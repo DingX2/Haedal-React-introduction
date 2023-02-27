@@ -1,26 +1,43 @@
-@media screen and (min-width:400px) and (max-width: 600px) {
-    .Button_viewer{
-        margin-bottom: 150% !important;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .Button_viewer{
-        margin-bottom: 50% !important;
-    }
-}
-
-@media screen and (min-width : 600px) and (max-width:1000px) {
-    .Button_viewer{
-        margin-bottom: 100%;
-    }
-}
-
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     .Button_viewer{
         margin-bottom: 170% !important;
     }
 }
+
+@media screen and (min-width:450px) and (max-width: 550px) {
+    .Button_viewer{
+        margin-bottom: 140% !important;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width: 700px) {
+    .Button_viewer{
+        margin-bottom: 120% !important;
+    }
+}
+
+@media screen and (min-width : 700px) and (max-width:1000px) {
+    .Button_viewer{
+        margin-bottom: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+    .Button_viewer{
+        margin-bottom: 80% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Button_viewer{
+        margin-bottom: 60% !important;
+    }
+}
+
+
+
+
+
 
 
 .Buttons{

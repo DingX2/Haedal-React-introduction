@@ -1,11 +1,79 @@
-.OneButton{
-    position: absolute;
-    background-color: green;
-    height: 25%;
-    width: 42%;
-    z-index: 1;
-    padding-top: 2%;
-    padding-left: 3.3%;
+@media screen and (min-width:1000px) {
+    .OneButton{
+        position: absolute;
+        background-color: green;
+        height: 35%;
+        width: 42%;
+        z-index: 1;
+        padding-top: 2%;
+        padding-left: 3.3%;
+    }
+
+    #Button1{
+        top : 7%;
+        left : 7%;
+    }
+    
+    #Button2{
+        top : 7%;
+        right: 7%;
+    }
+    
+    #Button3{
+        left : 7%;
+        top: 45% !important;
+    }
+    #Button4{
+        top : 45% !important;
+        right : 7%;
+    }
+    #Button5{
+        left : 7%;
+        top : 83% !important;
+    }
+    #Button6{
+        right : 7%;
+        top : 83% !important;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .OneButton{
+        position: absolute;
+        background-color: green;
+        height: 25%;
+        width: 42%;
+        z-index: 1;
+        padding-top: 2%;
+        padding-left: 3.3%;
+    }
+
+    #Button1{
+        top : 7%;
+        left : 7%;
+    }
+    
+    #Button2{
+        top : 7%;
+        right: 7%;
+    }
+    
+    #Button3{
+        left : 7%;
+        top: 37%;
+    }
+    #Button4{
+        top : 37%;
+        right : 7%;
+    }
+    #Button5{
+        left : 7%;
+        top : 67%;
+    }
+    #Button6{
+        right : 7%;
+        top : 67%;
+    }
 }
 
 #Button1{
