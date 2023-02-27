@@ -1,5 +1,9 @@
 # 해달 소개페이지 React
 
+git bash 에서 git clone https://github.com/DingX2/Haedal-React-introduction.git
+npm install
+npm start
+
 
 ### 버전 관리
 ```

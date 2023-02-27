@@ -1,13 +1,12 @@
-import "./css/App.css";
+import "./css/app.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
 import MainPage from "./MainPage";
 import Calender from "./Calender";
-import Apply from './Apply';
-import Notice from './Notice';
+import Apply from "./Apply";
+import Notice from "./Notice";
 import Buttons from "./Buttons";
-
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -54,8 +53,7 @@ function App() {
         data-bs-offset="0"
         class="scrollspy-example"
         tabindex="0"
-        >
-        
+      >
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
         <Calender />
@@ -63,7 +61,7 @@ function App() {
 
         <h4 id="scrollspyHeading2"> </h4>
         <CardNews />
-        <Buttons/>
+        <Buttons />
 
         <h4 id="scrollspyHeading3"> </h4>
         <Apply />

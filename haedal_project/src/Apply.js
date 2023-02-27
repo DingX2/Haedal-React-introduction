@@ -1,7 +1,7 @@
 import React from "react";
-import "./css/Apply.css";
+import "./css/apply.css";
 import { gsap } from "gsap";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const applyFunc = () => {
   document.querySelectorAll(".apply-button").forEach((button) => {
@@ -191,12 +191,12 @@ function Apply() {
               link();
               setIsActive(true);
               setTimeout(() => {
-                setIsActive(false)
+                setIsActive(false);
               }, 1800);
             }}
           >
             <span className="apply-contents">
-              <span>지원하기{" "}</span>
+              <span>지원하기 </span>
               <img
                 className="apply-plane-img"
                 src="img/icon_form.png"
