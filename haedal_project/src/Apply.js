@@ -198,7 +198,7 @@ function Apply() {
               <svg viewBox="0 0 16 16">
                 <polyline points="3.75 9 7 12 13 5"></polyline>
               </svg>
-              신청 완료
+              신청 완료!
             </span>
 
             <svg class="trails" viewBox="0 0 33 64">
