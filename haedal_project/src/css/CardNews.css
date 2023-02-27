@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@500;700&display=swap');
+
+:root {
+  --quote-size: 80px;
+  --cardnews-font-big: 48px;
+  --cardnews-font-small: 32px;
+
+  --cardnews-space-basic: 16px;
+
+  --card-size: 250px;
+}
+
+.cardnews_body .swiper-wrapper{
+  transition-timing-function : linear;
+}
+
+.cardnews_body .swiper-slide {
+  width: calc(var(--card-size) * 1.02);
+  height: calc(var(--card-size) * 1.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardnews_body .swiper-slide img {
+  width: var(--card-size);
+  height: var(--card-size);
+  transition: all 100ms ease-out;
+}
+
+.cardnews_body .swiper-slide img:hover {
+  width: calc(var(--card-size) * 1.02);
+  height: calc(var(--card-size) * 1.02);
+  transition: all 100ms ease-out;
+}
+
+.cardnews_body {
+  margin-top: calc(var(--cardnews-space-basic) * 8);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardnews_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardnews_title_big {
+  display: flex;
+  align-items: center;
+}
+
+.cardnews_title_big span {
+  font-family: 'Inter';
+  font-weight: 700;
+  color: #000D58;
+  font-size: var(--cardnews-font-big);
+  line-height: 1;
+}
+
+.cardnews_title_small {
+  margin-top: var(--cardnews-space-basic);
+  margin-bottom: calc(var(--cardnews-space-basic) * 2);
+  display: flex;
+  align-items: center;
+}
+
+.cardnews_title_small span{
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #FFE171;
+  background: #000D58;
+  font-size: var(--cardnews-font-small);
+  padding: calc(var(--cardnews-space-basic) / 4);
+  line-height: 1;
+}
+
+.cardnews_title_big .cardnews_title_quote_open {
+  font-size: var(--quote-size);
+  color: rgba(0, 13, 88, 0.5);
+  position: relative;
+  top: -5px;
+  left: -10px;
+  font-family: 'Inika';
+  font-weight: 400;
+}
+
+.cardnews_title_big .cardnews_title_quote_close {
+  font-size: var(--quote-size);
+  color: rgba(0, 13, 88, 0.5);
+  position: relative;
+  bottom: -40px;
+  right: -10px;
+  font-family: 'Inika';
+  font-weight: 400;
+}

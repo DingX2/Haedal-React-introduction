@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Banner from "./Banner.js";
 import MainPage from "./MainPage.js";
@@ -6,6 +6,8 @@ import Calender from "./Calender";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
 import Apply from "./Apply";
+import Buttons from "./Buttons";
+import Notice from './Notice';
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -22,8 +24,11 @@ function App() {
       <br />
       {/* 메인페이지*/}
       {/* 캘린더 & 공지 */}
+      <Calender />
+      <Notice />
       {/* 카드뉴스*/}
       {/*  버튼    */}
+      <Buttons/>
       {/* 지원하기*/}
       {/* 하단 상세페이지*/}
       <Footer />
