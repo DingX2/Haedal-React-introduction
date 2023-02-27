@@ -1,13 +1,27 @@
+@media screen and (min-width:400px) and (max-width: 600px) {
+    .Button_viewer{
+        margin-bottom: 150% !important;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .Button_viewer{
         margin-bottom: 50% !important;
     }
 }
 
-
-.Button_viewer{
-    margin-bottom: 100%;
+@media screen and (min-width : 600px) and (max-width:1000px) {
+    .Button_viewer{
+        margin-bottom: 100%;
+    }
 }
+
+@media screen and (max-width:400px) {
+    .Button_viewer{
+        margin-bottom: 170% !important;
+    }
+}
+
 
 .Buttons{
     position:absolute;
