@@ -6,17 +6,17 @@
   --newBlack: #000D58;
   --yellow: #FFE171;
 
-  --font-big: 32px;
-  --font-mid: 20px;
-  --font-small: 14px;
-  --font-very-small: 12px;
+  --footer-font-big: 32px;
+  --footer-font-mid: 20px;
+  --footer-font-small: 14px;
+  --footer-font-very-small: 12px;
 
-  --space-basic: 18px;
+  --footer-space-basic: 18px;
 }
 
 .footer {
   border-top: 2px var(--newBlack) solid;
-  padding: calc(var(--space-basic) * 4);
+  padding: calc(var(--footer-space-basic) * 4);
   display: flex;
   font-family: 'Inter';
   height: 300px;
@@ -44,18 +44,18 @@
 }
 
 .footer_haedal_logo img {
-  width: calc(var(--font-big) * 2);
+  width: calc(var(--footer-font-big) * 2);
 }
 
 .footer_haedal_logo > span {
-  font-size: var(--font-big);
+  font-size: var(--footer-font-big);
   font-family: 'Imprima';
   position: relative;
   left: -5px;
 }
 
 .footer_haedal_desc {
-  font-size: var(--font-small);
+  font-size: var(--footer-font-small);
   color: var(--newBlack);
 }
 
@@ -64,9 +64,9 @@
 }
 
 .footer_links img {
-  width: 2rem;
-  height: 2rem;
-  margin-right: calc(var(--space-basic) / 2);
+  width: var(--footer-font-mid);
+  height: var(--footer-font-mid);
+  margin-right: calc(var(--footer-space-basic) / 2);
   cursor: pointer;
 }
 
@@ -80,12 +80,12 @@
 
 .footer_contact > span,
 .footer_madeBy > span {
-  font-size: var(--font-mid);
-  margin-bottom: var(--space-basic);
+  font-size: var(--footer-font-mid);
+  margin-bottom: var(--footer-space-basic);
 }
 
 .footer_contact ul {
-  font-size: var(--font-small);
+  font-size: var(--footer-font-small);
 }
 
 .footer_madeBy {
@@ -97,7 +97,7 @@
 }
 
 .footer_madeBy ul {
-  font-size: var(--font-small);
+  font-size: var(--footer-font-small);
 }
 
 .footer_copyright {
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: right;
   align-items: end;
-  font-size: var(--font-very-small);
+  font-size: var(--footer-font-very-small);
   color: rgba(0, 13, 88, 0.5);
 }
 
@@ -125,7 +125,7 @@
   }
 
   .footer_links {
-    margin-top: var(--space-basic);
+    margin-top: var(--footer-space-basic);
   }
   
   .footer > * {
@@ -134,12 +134,12 @@
   }
 
   .footer > *:not(:last-child, :first-child) {
-    margin-bottom: calc(var(--space-basic) * 2);
+    margin-bottom: calc(var(--footer-space-basic) * 2);
   }
 
   .footer_contact > span,
   .footer_madeBy > span {
-    margin-bottom: calc(var(--space-basic) / 2);
+    margin-bottom: calc(var(--footer-space-basic) / 2);
   }
 
   .footer_copyright {
@@ -157,6 +157,6 @@
 
   .footer_intro {
     height: auto;
-    margin-bottom: calc(var(--space-basic) * 2);
+    margin-bottom: calc(var(--footer-space-basic) * 2);
   }
 }

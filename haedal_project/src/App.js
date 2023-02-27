@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import CardNews from "./CardNews";
 import Apply from "./Apply";
 import Buttons from "./Buttons";
+import Notice from './Notice';
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -25,6 +26,7 @@ function App() {
       <MainPage />
       {/* 캘린더 & 공지 */}
       <Calender />
+      <Notice />
       {/* 카드뉴스*/}
       <CardNews />
       {/*  버튼    */}

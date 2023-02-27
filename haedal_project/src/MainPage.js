@@ -20,7 +20,7 @@ export default function MainPage() {
   ];
 
   return (
-    <>
+    <div className='mainpage'>
       <Swiper
         pagination={pagination}
         modules={[Pagination]}
@@ -32,6 +32,6 @@ export default function MainPage() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }

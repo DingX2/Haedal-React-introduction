@@ -6,6 +6,11 @@ document.querySelectorAll(".apply-button").forEach((button) => {
   let getVar = (variable) =>
     getComputedStyle(button).getPropertyValue(variable);
 
+  //앞의 함수가 무조건 실행 되어야 함
+  //complie 한번당/ 렌더링 당 한 사이트만 실행되는거 같음
+
+  //const timer = setTimeout(() => console.log("Initial timeout!"), 1000);
+  //
   button.addEventListener("click", (e) => {
     if (!button.classList.contains("active")) {
       button.classList.add("active");
@@ -135,11 +140,26 @@ document.querySelectorAll(".apply-button").forEach((button) => {
   });
 });
 
+//10이 왜 안들어갈까요/
+
+function reload(check) {
+  //if (parent.location.href.indexOf('reloaded')==-1) parent.location.replace(parent.location.href+'?reloaded');
+  if (check === 10) {
+    alert("5");
+    //alert("신청 완료");
+  } else {
+    //window.location.reload(true);
+    //alert("신청 완료"); // 버그수정을 위해 적어둠
+  }
+}
+
 const link = () => {
   setTimeout(
     () => window.open(url, "_blank", `height=${height}, width=${width}`),
     3000
   );
+  let check = 10;
+  setTimeout((check) => reload(), 7000);
 };
 
 // 화면 사이즈 가져오기
@@ -153,11 +173,12 @@ function Apply() {
   const timer = setTimeout(() => console.log("Initial timeout!"), 2000);
   clearTimeout(timer);
 
+  let check = 0;
+
   return (
     <div>
       <div className="apply">
         <div className="apply-view">
-          <span />
           <button
             class="apply-button"
             img
@@ -166,20 +187,20 @@ function Apply() {
             onClick={link}
           >
             <span className="apply-contents">
-              <p></p> 지원하기{" "}
+              지원하기{" "}
               <img
                 className="apply-plane-img"
                 src="img/icon_form.png"
                 alt="plane"
               />
             </span>
-            <p></p>
             <span class="success">
               <svg viewBox="0 0 16 16">
                 <polyline points="3.75 9 7 12 13 5"></polyline>
               </svg>
               신청 완료
             </span>
+
             <svg class="trails" viewBox="0 0 33 64">
               <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
               <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
@@ -193,6 +214,7 @@ function Apply() {
       </div>
     </div>
   );
+  //clearTimeout(timer);
 }
 
 export default Apply;
