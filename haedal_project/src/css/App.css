@@ -1,4 +1,6 @@
-.App {
+/* 아래 스타일 필요 없는 듯 합니다 */
+
+/* .App {
   height: 100%;
 }
 
@@ -9,7 +11,7 @@ body {
 }
 
 body {
-  background: #F5F5F5;
+  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -32,4 +34,4 @@ body {
 
 .button {
   margin-left: 20px;
-}
+} */
