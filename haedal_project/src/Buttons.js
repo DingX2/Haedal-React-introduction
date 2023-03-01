@@ -5,6 +5,20 @@ import OneButton from "./OneButton";
 const Buttons = () => (
 
   <div className="Button_viewer">
+    
+  {/* title from cardnews */}
+  <div className="cardnews_title">
+    <div className="cardnews_title_big">
+      <span className="cardnews_title_quote_open">“</span>
+      <span>내가 만드는 해달</span>
+      <span className="cardnews_title_quote_close">”</span>
+    </div>
+    <div className="cardnews_title_small">
+      <span>해달 메인 컨텐츠</span>
+    </div>
+  </div>
+  {/* / title from cardnews */}
+
   <div className="Buttons">
     <OneButton id="Button1" content="| 아이디어톤" image="img/아이디어톤.png" url="https://www.naver.com"/>
     <OneButton id="Button2" content="| 해커톤" image="img/해커톤.png" url="https://www.knu.ac.kr"/>
