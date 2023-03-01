@@ -15,6 +15,7 @@
 
 .introduction {
   background: rgba(217, 217, 217, 0.1);
+  margin-bottom: var(--space-between-components);
 }
 
 .introduction-view {
@@ -137,11 +138,11 @@
   }
 
   .introduction-image-wrap {
-    order: 2;
+    order: 2 !important;
   }
 
   .introduction-article-wrap {
-    order: 1;
+    order: 1 !important;
     align-items: center;
     text-align: center;
   }

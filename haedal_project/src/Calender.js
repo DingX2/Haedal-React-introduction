@@ -4,7 +4,11 @@ function Calender() {
   return (
     <div className="calender">
       <div className="calender_view">
-        <img className="calender_image" alt="Calender" src="./img/calender.png" />
+        <img
+          className="calender_image"
+          alt="Calender"
+          src="./img/calender.png"
+        />
       </div>
     </div>
   );

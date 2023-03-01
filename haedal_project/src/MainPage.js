@@ -20,7 +20,7 @@ export default function MainPage() {
   ];
 
   return (
-    <div className='mainpage'>
+    <div className="mainpage">
       <Swiper
         pagination={pagination}
         modules={[Pagination]}

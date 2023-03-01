@@ -1,6 +1,21 @@
 :root {
   --color-new-black: rgba(0, 13, 88, 1);
   --color-yellow: rgba(255, 225, 113, 1);
+
+  
+  --space-between-components: 5rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --space-between-components: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-between-components: 4rem;
+  }
 }
 
 ol, ul, li, p, br{

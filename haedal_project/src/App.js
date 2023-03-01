@@ -4,14 +4,10 @@ import Footer from "./Footer";
 import CardNews from "./CardNews";
 import MainPage from "./MainPage";
 import Calender from "./Calender";
-import Apply from './Apply';
-import Notice from './Notice';
+import Apply from "./Apply";
+import Notice from "./Notice";
 import Buttons from "./Buttons";
 import Introduction from './Introduction';
-
-const OPTIONS = {};
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function App() {
   return (
@@ -54,8 +50,7 @@ function App() {
         data-bs-offset="0"
         class="scrollspy-example"
         tabindex="0"
-        >
-        
+      >
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
         <Introduction />
@@ -64,7 +59,7 @@ function App() {
 
         <h4 id="scrollspyHeading2"> </h4>
         <CardNews />
-        <Buttons/>
+        <Buttons />
 
         <h4 id="scrollspyHeading3"> </h4>
         <Apply />

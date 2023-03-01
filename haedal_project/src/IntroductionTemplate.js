@@ -1,5 +1,3 @@
-import './css/IntroductionTemplate.css'
-
 export default function IntroductionTemplate(props) {
   return (
     <div className='introduction-template'>
