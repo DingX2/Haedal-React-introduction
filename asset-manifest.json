@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c6c365a.css",
-    "main.js": "/static/js/main.0fb5d871.js",
-    "index.html": "/index.html",
-    "main.9c6c365a.css.map": "/static/css/main.9c6c365a.css.map",
-    "main.0fb5d871.js.map": "/static/js/main.0fb5d871.js.map"
+    "main.css": "/Haedal-React-introduction/static/css/main.9c6c365a.css",
+    "main.js": "/Haedal-React-introduction/static/js/main.0fb5d871.js",
+    "index.html": "/Haedal-React-introduction/index.html",
+    "main.9c6c365a.css.map": "/Haedal-React-introduction/static/css/main.9c6c365a.css.map",
+    "main.0fb5d871.js.map": "/Haedal-React-introduction/static/js/main.0fb5d871.js.map"
   },
   "entrypoints": [
     "static/css/main.9c6c365a.css",
