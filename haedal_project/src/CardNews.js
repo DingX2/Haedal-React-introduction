@@ -14,15 +14,11 @@ const images = [
   "./img/card6.png",
   "./img/card7.png",
   "./img/card8.png",
-  "./img/card1.png",
-  "./img/card2.png",
-  "./img/card3.png",
-  "./img/card4.png",
-  "./img/card5.png",
-  "./img/card6.png",
-  "./img/card7.png",
-  "./img/card8.png",
 ];
+
+const imgsDuplicated = [...images];
+
+const newImgList = images.concat(imgsDuplicated);
 
 function CardNews() {
   const [mouseEnter, setMouseEnter] = useState(false);
@@ -72,7 +68,7 @@ function CardNews() {
           grabCursor // 잡기 가능
           pauseOnMouseEnter={true}
         >
-          {images.map((img, index) => (
+          {newImgList.map((img, index) => (
             <SwiperSlide>
               <img className="cards" src={img} alt={`card${index}`} />
             </SwiperSlide>

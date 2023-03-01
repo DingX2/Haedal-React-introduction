@@ -1,4 +1,4 @@
-ol, ul, li {
+ol, ul, li, p, br{
   margin: 0;
   padding: 0;
 }
