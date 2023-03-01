@@ -4,6 +4,9 @@
   }
 }
 
+.mainpage {
+  margin-bottom: var(--space-between-components);
+}
 
 .mainpage .swiper {
     width: 100%;
@@ -12,7 +15,7 @@
     --swiper-pagination-bullet-width : 48px;
     --swiper-pagination-bullet-height : 10px;
   }
-  
+
 .mainpage .swiper-slide {
   text-align: center;
   font-size: 18px;

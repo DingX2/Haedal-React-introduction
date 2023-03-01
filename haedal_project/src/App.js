@@ -1,4 +1,4 @@
-import "./css/app.css";
+import "./css/App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
@@ -7,10 +7,7 @@ import Calender from "./Calender";
 import Apply from "./Apply";
 import Notice from "./Notice";
 import Buttons from "./Buttons";
-
-const OPTIONS = {};
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+import Introduction from './Introduction';
 
 function App() {
   return (
@@ -56,6 +53,7 @@ function App() {
       >
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
+        <Introduction />
         <Calender />
         <Notice />
 

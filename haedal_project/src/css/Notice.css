@@ -18,7 +18,7 @@
   text-align: center;
   background: rgba(217, 217, 217, 0.1);
   padding: calc(var(--notice-space-basic) * 5);
-  margin-bottom: calc(var(--notice-space-basic) * 10);
+  margin-bottom: var(--space-between-components);
 }
 
 .notice_title {
