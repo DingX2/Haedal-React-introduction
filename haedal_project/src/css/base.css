@@ -1,3 +1,8 @@
+:root {
+  --color-new-black: rgba(0, 13, 88, 1);
+  --color-yellow: rgba(255, 225, 113, 1);
+}
+
 ol, ul, li, p, br{
   margin: 0;
   padding: 0;

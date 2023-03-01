@@ -7,7 +7,7 @@ import Calender from "./Calender";
 import Apply from './Apply';
 import Notice from './Notice';
 import Buttons from "./Buttons";
-
+import Introduction from './Introduction';
 
 const OPTIONS = {};
 const SLIDE_COUNT = 5;
@@ -58,6 +58,7 @@ function App() {
         
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
+        <Introduction />
         <Calender />
         <Notice />
 
