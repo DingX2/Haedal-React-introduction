@@ -10,6 +10,7 @@
     "bootstrap": "^5.2.3",
     "embla-carousel-autoplay": "^7.0.9",
     "embla-carousel-react": "^7.0.9",
+    "gh-pages": "^5.0.0",
     "global": "^4.4.0",
     "gsap": "^3.11.4",
     "react": "^18.2.0",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "http://haedal.github.io"
 }
