@@ -1,6 +1,18 @@
-import './css/Notice.css'
+import './css/Notice.css';
+import { useState, useEffect } from 'react';
+import textfile from './notice.txt';
 
 export default function Notice() {
+
+  // notice.txt 의 텍스트를 불러옵니다.
+  const [text, setText] = useState('');
+  useEffect(() => {
+    fetch(textfile)
+      .then(response => response.text())
+      .then(textContent => {
+        setText(textContent);
+  })}, []);
+  
   return (
     <div className='notice'>
       <div className='notice_title'>
@@ -8,8 +20,7 @@ export default function Notice() {
         <span>공지사항</span>
       </div>
       <div className='notice_text'>
-        <span>해달에 많은 관심 부탁드립니다.</span><br />
-        <span>그리고 해달은 귀엽습니다.</span>
+        <span dangerouslySetInnerHTML={{__html: text.replace(/\n/g, "<br />")}}></span>
       </div>
     </div>
   )

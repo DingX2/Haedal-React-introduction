@@ -44,13 +44,12 @@
 }
 
 .notice_text {
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .notice_text span {
   font-family: 'Inter';
   font-weight: 600;
   font-size: var(--notice-font-small);
-  line-height: 1;
   color: var(--newBlack);
 }
