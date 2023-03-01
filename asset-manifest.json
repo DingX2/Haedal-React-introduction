@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/Haedal_React_introduction/static/css/main.073c9b0a.css",
-    "main.js": "/Haedal_React_introduction/static/js/main.62f76641.js",
-    "static/js/787.3c45e5ce.chunk.js": "/Haedal_React_introduction/static/js/787.3c45e5ce.chunk.js",
-    "static/media/logo.svg": "/Haedal_React_introduction/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Haedal_React_introduction/index.html",
-    "main.073c9b0a.css.map": "/Haedal_React_introduction/static/css/main.073c9b0a.css.map",
-    "main.62f76641.js.map": "/Haedal_React_introduction/static/js/main.62f76641.js.map",
-    "787.3c45e5ce.chunk.js.map": "/Haedal_React_introduction/static/js/787.3c45e5ce.chunk.js.map"
+    "main.css": "/static/css/main.9c6c365a.css",
+    "main.js": "/static/js/main.0fb5d871.js",
+    "index.html": "/index.html",
+    "main.9c6c365a.css.map": "/static/css/main.9c6c365a.css.map",
+    "main.0fb5d871.js.map": "/static/js/main.0fb5d871.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.62f76641.js"
+    "static/css/main.9c6c365a.css",
+    "static/js/main.0fb5d871.js"
   ]
 }
