@@ -6,12 +6,12 @@
   --newBlack: #000D58;
   --yellow: #FFE171;
 
-  --footer-font-big: 32px;
-  --footer-font-mid: 20px;
-  --footer-font-small: 14px;
-  --footer-font-very-small: 12px;
+  --footer-font-big: 2rem;
+  --footer-font-mid: 1.25rem;
+  --footer-font-small: 0.875rem;
+  --footer-font-very-small: 0.75rem;
 
-  --footer-space-basic: 18px;
+  --footer-space-basic: 1.125rem;
 }
 
 .footer {

@@ -1,29 +1,25 @@
-.Calender{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Calender_view{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.calender{
     margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
-.Calender_image {
-    width: 70vw;
+.calender_view{
+    display: flex;
+    justify-content: center;
+}
+
+.calender_image {
+    width: 65%;
 }
 
 @media (max-width: 1024px) {
-    .Calender_image {
-        width: 80vw;
+    .calender_image {
+        width: 80%;
     }
 }
 
 @media (max-width: 768px) {
-    .Calender_image {
-        width: 100vw;
+    .calender_image {
+        width: 100%;
     }
 }

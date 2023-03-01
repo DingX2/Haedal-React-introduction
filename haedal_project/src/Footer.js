@@ -1,5 +1,4 @@
 import "./css/footer.css";
-import { React } from "react";
 
 {
   /* <div className="Footer">
