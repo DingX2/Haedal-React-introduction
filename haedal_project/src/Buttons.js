@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/Buttons.css";
+import "./css/buttons.css";
 import OneButton from "./OneButton";
 
 const Buttons = () => (

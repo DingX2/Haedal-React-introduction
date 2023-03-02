@@ -1,4 +1,4 @@
-import "./css/App.css";
+import "./css/app.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Footer from "./Footer";
 import CardNews from "./CardNews";
@@ -7,7 +7,7 @@ import Calender from "./Calender";
 import Apply from "./Apply";
 import Notice from "./Notice";
 import Buttons from "./Buttons";
-import Introduction from './Introduction';
+import Introduction from "./Introduction";
 
 function App() {
   return (
