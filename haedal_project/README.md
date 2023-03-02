@@ -1,11 +1,5 @@
 # 해달 소개페이지 React
 
-<<<<<<< HEAD
-git bash 에서 git clone https://github.com/DingX2/Haedal-React-introduction.git
-npm install
-npm start
-
-=======
 ### 실행하는 법
 ```
 # git bash 에서
@@ -15,7 +9,6 @@ cd haedal_projects
 npm install
 npm start
 ```
->>>>>>> 0c447facfa275096156b60518a57fbda40ab5610
 
 ### 버전 관리
 ```

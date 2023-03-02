@@ -39,7 +39,7 @@
   flex-direction: column;
   background: rgba(217, 217, 217, 0.1);
   padding: calc(var(--cardnews-space-basic) * 10) 0;
-  margin-bottom: calc(var(--cardnews-space-basic) * 5);
+  margin-bottom: var(--space-between-components);
 }
 
 .cardnews_body .swiper-wrapper{

@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SwiperCore, { Autoplay } from "swiper";
-import "./css/cardNews.css";
+import "./css/CardNews.css";
 
 const images = [
   "./img/card1.png",

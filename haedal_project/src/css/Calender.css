@@ -1,6 +1,11 @@
+:root {
+    --calender-space-basic: 5rem;
+}
+
 .calender{
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    background: rgba(217, 217, 217, 0.1);
+    margin-bottom: var(--space-between-components);
+    padding: var(--calender-space-basic) 0;
 }
 
 .calender_view{
@@ -13,12 +18,20 @@
 }
 
 @media (max-width: 1024px) {
+    :root {
+        --calender-space-basic: 4.5rem;
+    }
+
     .calender_image {
         width: 80%;
     }
 }
 
 @media (max-width: 768px) {
+    :root {
+        --calender-space-basic: 4rem;
+    }
+
     .calender_image {
         width: 100%;
     }
