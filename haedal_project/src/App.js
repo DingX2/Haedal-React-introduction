@@ -32,16 +32,6 @@ function App() {
               Apply
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4">
-              Fourth
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading5">
-              Fifth
-            </a>
-          </li>
         </ul>
       </nav>
       <div

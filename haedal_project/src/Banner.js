@@ -29,12 +29,6 @@ const Navbar = () => {
               Apply
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading5"></a>
-          </li>
         </ul>
       </nav>
       <div
