@@ -2,8 +2,8 @@ import React from "react";
 import CardNews from "./CardNews";
 import MainPage from "./MainPage";
 import Calender from "./Calender";
-import Apply from './Apply';
-import Notice from './Notice';
+import Apply from "./Apply";
+import Notice from "./Notice";
 import Buttons from "./Buttons";
 
 const Navbar = () => {
@@ -29,16 +29,6 @@ const Navbar = () => {
               Apply
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading4">
-              Fourth
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading5">
-              Fifth
-            </a>
-          </li>
         </ul>
       </nav>
       <div
@@ -47,10 +37,10 @@ const Navbar = () => {
         data-bs-offset="0"
         class="scrollspy-example"
         tabindex="0"
-        style={{ 
-          position : "relative"
-        }}>
-        
+        style={{
+          position: "relative",
+        }}
+      >
         <h4 id="scrollspyHeading1"> </h4>
         <MainPage />
         <Calender />
@@ -58,8 +48,15 @@ const Navbar = () => {
 
         <h4 id="scrollspyHeading2"> </h4>
         <CardNews />
-        <br/><br/><br/><br/><br/><br/><br/><br/>
-        <Buttons/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Buttons />
         <h4 id="scrollspyHeading3"> </h4>
         <Apply />
       </div>
