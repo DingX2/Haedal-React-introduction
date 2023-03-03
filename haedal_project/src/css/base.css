@@ -25,6 +25,7 @@ ol, ul, li, p, br{
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 /* 드래그 막기 */

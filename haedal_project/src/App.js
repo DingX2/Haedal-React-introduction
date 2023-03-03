@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
         <a class="navbar-brand" href="#">
-          HAEDAL
+          <div className='nav-logo'>
+            <span>HAE</span><div className='nav-logo-img-wrap'><img src='img/haedal_logo.png' /></div><span>DAL</span>
+          </div>
         </a>
         <ul class="nav nav-pills">
           <li class="nav-item">
