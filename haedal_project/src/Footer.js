@@ -57,7 +57,7 @@ function Footer() {
             <span>김은정 김아진</span>
           </li>
           <li>
-            <span>이수현 남동우 조현호 김현주 .feat(React)</span>
+            <span>이수현 남동우 조현호 김현주 (feat. React)</span>
           </li>
         </ul>
       </div>
