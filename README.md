@@ -1,6 +1,6 @@
 # Haedal-React-introduction
-This is the introduction website for recruiting new IT society HAEDAL members.
-
+This is the introduction website for recruiting new IT society HAEDAL members.<br/> 
+https://dingx2.github.io/Haedal-React-introduction/
 
 # 해달 소개페이지 React
 
